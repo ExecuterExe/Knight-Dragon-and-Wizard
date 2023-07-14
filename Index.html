@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Knight, Dragon and Wizard [game]</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="block__info">
+            <div class="info__title">Knight, Dragon and Wizard [game]</div>
+            <div class="info__description">
+                <p><span class="knight__style">The knight</span> wins <span class="dragon__style">the dragon</span></p>
+                <p><span class="wizard__style">The wizard</span> wins <span class="knight__style">the knight</span></p>
+                <p><span class="dragon__style">The dragon</span> wins <span class="wizard__style">the wizard</span></p>
+            </div>
+        </div>
+        <div class="block__game">
+            <div class="block__choice">
+                <button class="choice_knight game">🤺</button>
+                <button class="choice_dragon game">🐉</button>
+                <button class="choice_wizard game">🧙‍♂️</button>
+                <span class="arrow arrow_1">➤</span>
+                <span class="arrow arrow_2">➤</span>
+                <span class="arrow arrow_3">➤</span>
+            </div>
+        </div>
+        <div class="block__accepted-choice">
+            <div class="accepted-choice accepted-choice__player">You've chosen "The Wizard"</div>
+            <div class="accepted-choice accepted-choice__computer">Computer have chosen "The Wizard"</div>
+        </div>
+        <div class="block__board">
+            <div class="board__reason"></div>
+            <div class="board"><span class="score"></span>:<span class="score"></span></div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
