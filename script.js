@@ -70,6 +70,7 @@ function processGame(choice) {
     compareChoices();
     displayReasonScore();
     displayScore();
+    finishGame();
 }
 
 function choicePlayer(button) {
@@ -114,4 +115,23 @@ function displayScore() {
 
     computerScore += rules[playerChoice][computerChoice].computerScore;
     displayScoreBoard[1].textContent = computerScore
+
+
+}
+
+function finishGame() {
+    const displayFinalScoreMessage = document.querySelector('.board__message-final-score');
+    if (playerScore == 5) {
+        displayFinalScoreMessage.textContent = 'This time you were stronger than the computer. It\'s a victory!'
+        playerScore = null;
+        computerScore = null;
+        return
+    } else if (computerScore == 5) {
+        displayFinalScoreMessage.textContent = 'The computer was able to anticipate your moves. It\'s a defeat!'
+        playerScore = null;
+        computerScore = null;
+        return
+    } else {
+        displayFinalScoreMessage.textContent = '';
+    }
 }
