@@ -125,7 +125,12 @@
     color: white;
     font-size: 22px;
     width: 800px;
-    height: 100px;
+    height: 150px;
     background-color: rgba(92, 21, 21, 0.979);
     margin: 45px auto 0 auto;
+}
+
+.board {
+    margin-top: 20px;
+    font-size: 40px;
 }
